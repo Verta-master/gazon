@@ -474,7 +474,7 @@ button {
   margin-top: 4px;
   width: 140px;
   height: 15px;
-  background-image: url(../../img/icons/tick.svg);
+  background-image: url(../img/icons/tick.svg);
 }
 .menu {
   position: relative;
@@ -688,6 +688,32 @@ button {
 .btn:active {
   color: #fff;
   background-color: #25d366;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn-green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: #25d366;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn-green:hover,
+.btn-green:active {
+  background-color: #1dab52;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1020,4 +1046,168 @@ button {
 }
 .team__info span {
   font-size: 12px;
+}
+.subscribe__wrap {
+  padding-top: 60px;
+  padding-bottom: 85px;
+  padding-left: 50px;
+  padding-right: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe__wrap p {
+  margin: 0;
+  font-size: 19px;
+}
+.subscribe__wrap .subscribe__comment {
+  font-size: 9px;
+}
+.subscribe__comment {
+  color: #9b9b9b;
+}
+.subscribe__comment a {
+  text-decoration: underline;
+}
+.subscribe__comment a:hover,
+.subscribe__comment a:active {
+  text-decoration: none;
+}
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 384px;
+  margin-bottom: 5px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #9b9b9b;
+}
+.subscribe__input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 11px;
+  color: #9b9b9b;
+}
+.subscribe__input::-webkit-input-placeholder {
+  opacity: 1;
+}
+.subscribe__input::-ms-input-placeholder {
+  opacity: 1;
+}
+.subscribe__input::placeholder {
+  opacity: 1;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social li {
+  margin-bottom: 3px;
+}
+.social__link {
+  display: block;
+  position: relative;
+  padding-left: 18px;
+}
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social__link--fb::before {
+  background-image: url(../img/icons/icon-fb.svg);
+  background-size: 4px 7px;
+}
+.social__link--vk::before {
+  background-image: url(../img/icons/icon-vk.svg);
+  background-size: 7px 4px;
+}
+.social__link--in::before {
+  background-image: url(../img/icons/icon-insta.svg);
+  background-size: 7px 7px;
+}
+.social__link--tw::before {
+  background-image: url(../img/icons/icon-tw.svg);
+  background-size: 7px 6px;
+}
+.social__link--tg::before {
+  background-image: url(../img/icons/icon-telegram.svg);
+  background-size: 7px 6px;
+}
+.footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: #fff;
+  background-color: #535353;
+}
+.footer .logo {
+  max-width: 106px;
+  margin-bottom: 15px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__list li {
+  margin-bottom: 3px;
+}
+.footer__block {
+  width: 215px;
+  margin-right: auto;
+}
+.footer__block span {
+  font-size: 9px;
+}
+.footer__column {
+  width: 110px;
+  font-size: 11px;
+}
+.footer__column p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.footer__column a {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.footer__column a:hover,
+.footer__column a:active {
+  color: #25d366;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
