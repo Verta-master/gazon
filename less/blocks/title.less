@@ -1,0 +1,30 @@
+.title-center {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 145px;
+  padding-right: 145px;
+  font-size: 19px;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 125px;
+    height: 5px;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: repeat-x;
+  }
+  
+  &::before {
+    left: 0;
+  }
+  
+  &::after {
+    right: 0;
+  }
+}
