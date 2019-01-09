@@ -4,6 +4,12 @@
   font-style: normal;
   src: url("../fonts/pt-sans-regular.woff2") format("woff2"), url("../fonts/pt-sans-regular.woff") format("woff");
 }
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/pt-sans-web-bold.woff2") format("woff2"), url("../fonts/pt-sans-web-bold.woff") format("woff");
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -444,15 +450,15 @@ button {
   padding-right: 20px;
 }
 .header {
-  padding-top: 45px;
-  padding-bottom: 30px;
+  padding-top: 48px;
+  padding-bottom: 25px;
   color: #fff;
   background-color: #535353;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
 }
 .header .logo {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   text-align: center;
 }
 .header .logo::after {
@@ -473,7 +479,7 @@ button {
   display: block;
   margin-top: 4px;
   width: 140px;
-  height: 15px;
+  height: 14px;
   background-image: url(../img/icons/tick.svg);
 }
 .menu {
@@ -596,6 +602,8 @@ button {
 .news__sidebar {
   width: 290px;
   padding: 20px;
+  padding-right: 15px;
+  padding-bottom: 27px;
   border: 1px solid #f4f4f4;
 }
 .news__img {
@@ -618,7 +626,8 @@ button {
   transition: ease-out 0.3s;
 }
 .news__img p {
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 8px;
   font-size: 19px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
@@ -642,7 +651,7 @@ button {
   transition: ease-out 0.3s;
 }
 .news__info {
-  margin-top: 5px;
+  margin-top: 7px;
   color: #9b9b9b;
   font-size: 11px;
 }
@@ -664,7 +673,7 @@ button {
   background-repeat: no-repeat;
 }
 .news__btn {
-  width: 110px;
+  width: 100px;
   margin-top: 30px;
 }
 .btn {
@@ -677,7 +686,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 15px;
+  padding: 7px 10px;
   text-transform: uppercase;
   font-size: 11px;
   border: 1px solid #25d366;
@@ -771,7 +780,8 @@ button {
   left: 0;
 }
 .gallery__item--big .gallery__info {
-  padding: 30px 40px;
+  padding: 37px 40px;
+  font-size: 19px;
 }
 .gallery__item:hover .gallery__info p,
 .gallery__item:active .gallery__info p {
@@ -804,9 +814,11 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 30px 20px;
+  padding: 35px 20px;
 }
 .gallery__info p {
+  margin-top: 7px;
+  margin-bottom: 0;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -817,11 +829,11 @@ button {
 }
 .blog {
   position: relative;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
 }
 .blog__slider {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 850px;
   margin-left: auto;
   margin-right: auto;
@@ -875,7 +887,7 @@ button {
   position: relative;
   width: 100%;
   height: 154px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   overflow: hidden;
 }
 .blog__img img {
@@ -962,7 +974,7 @@ button {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 125px;
+  width: 117px;
   height: 5px;
   background-image: url(../img/icons/tick.svg);
   background-repeat: repeat-x;
@@ -1033,7 +1045,7 @@ button {
   z-index: 5;
   left: 0;
   right: 0;
-  top: 60%;
+  top: 65%;
   padding: 25px 40px;
   color: #fff;
 }
@@ -1049,9 +1061,9 @@ button {
 }
 .subscribe__wrap {
   padding-top: 60px;
-  padding-bottom: 85px;
-  padding-left: 50px;
-  padding-right: 170px;
+  padding-bottom: 90px;
+  padding-left: 70px;
+  padding-right: 193px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1091,7 +1103,7 @@ button {
           align-items: center;
   width: 384px;
   margin-bottom: 5px;
-  padding: 4px;
+  padding: 2px 4px;
   border-radius: 4px;
   border: 1px solid #9b9b9b;
 }
@@ -1119,7 +1131,7 @@ button {
   list-style: none;
 }
 .social li {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .social__link {
   display: block;
@@ -1164,8 +1176,15 @@ button {
   background-color: #535353;
 }
 .footer .logo {
-  max-width: 106px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+}
+.footer .logo svg {
+  width: 100px;
+}
+.footer .logo::after {
+  width: 102px;
+  margin-top: 0;
+  left: -2px;
 }
 .footer__wrap {
   display: -webkit-box;
@@ -1184,7 +1203,7 @@ button {
   list-style: none;
 }
 .footer__list li {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 .footer__block {
   width: 215px;
@@ -1194,8 +1213,12 @@ button {
   font-size: 9px;
 }
 .footer__column {
-  width: 110px;
+  width: 120px;
+  padding-top: 5px;
   font-size: 11px;
+}
+.footer__column--social {
+  width: 82px;
 }
 .footer__column p {
   margin-top: 0;
