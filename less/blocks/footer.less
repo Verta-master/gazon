@@ -5,8 +5,17 @@
   background-color: #535353;
   
   .logo {
-    max-width: 106px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    
+    svg {
+      width: 100px;
+    }
+    
+    &::after {
+      width: 102px;
+      margin-top: 0;
+      left: -2px;
+    }
   }
 }
 
@@ -21,7 +30,7 @@
   list-style: none;
   
   li {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 }
 
@@ -35,8 +44,13 @@
 }
 
 .footer__column {
-  width: 110px;
+  width: 120px;
+  padding-top: 5px;
   font-size: 11px;
+  
+  &--social {
+    width: 82px;
+  }
   
   p {
     margin-top: 0;
