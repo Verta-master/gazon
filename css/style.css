@@ -450,6 +450,7 @@ button {
   padding-right: 20px;
 }
 .header {
+  position: relative;
   padding-top: 48px;
   padding-bottom: 25px;
   color: #fff;
@@ -472,8 +473,8 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #fff;
 }
 .header__wrap {
@@ -502,6 +503,9 @@ button {
   width: 140px;
   height: 14px;
   background-image: url(../img/icons/tick.svg);
+}
+.logo-internal {
+  padding-top: 5px;
 }
 .logo-internal svg {
   fill: #25d366;
@@ -557,7 +561,7 @@ button {
   padding: 0;
   list-style: none;
   position: absolute;
-  top: 100%;
+  top: 90%;
   left: 0;
   width: 300px;
   font-size: 11px;
@@ -1035,6 +1039,9 @@ button {
 .title-center::after {
   right: 0;
 }
+.team--internal .team__info p {
+  color: #25d366;
+}
 .team__list {
   margin: 0;
   padding: 0;
@@ -1335,14 +1342,14 @@ button {
 }
 .promo__info span {
   display: block;
-  line-height: 47px;
+  margin-bottom: 15px;
   font-size: 18px;
 }
 blockquote {
   margin: 0;
   padding: 0;
   position: relative;
-  padding-left: 40px;
+  padding-left: 50px;
   font-size: 14px;
   line-height: 22px;
   background-image: url(../img/icons/quotes.svg);
@@ -1353,7 +1360,7 @@ blockquote {
 .pagination {
   position: relative;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1382,8 +1389,8 @@ blockquote {
 }
 .pagination__link {
   display: block;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
   font-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1487,6 +1494,9 @@ span.pagination__link--more {
     opacity: 1;
     border: 0;
   }
+  .header-internal .search {
+    margin-right: 0;
+  }
   .news__main {
     width: 60%;
   }
@@ -1521,6 +1531,12 @@ span.pagination__link--more {
   .subscribe__wrap {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .promo__slide {
+    height: 265px;
+  }
+  .promo__info {
+    left: 20px;
   }
 }
 @media (max-width: 766px) {
@@ -1572,7 +1588,6 @@ span.pagination__link--more {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    position: relative;
   }
   .header .logo {
     margin-bottom: 10px;
@@ -1587,6 +1602,7 @@ span.pagination__link--more {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: static;
   }
   .search {
     margin: 0;
@@ -1596,11 +1612,9 @@ span.pagination__link--more {
     position: absolute;
     z-index: 10;
     top: 100%;
-    width: 100vw;
     padding-top: 10px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    left: -20px;
+    right: -20px;
     background-color: #535353;
   }
   .menu__item {
@@ -1624,6 +1638,48 @@ span.pagination__link--more {
   .menu--opened .menu__btn {
     background-image: url(../img/icons/icon-menu-cross.svg);
     background-size: 24px 24px;
+  }
+  .promo__slide {
+    height: 175px;
+  }
+  .header-internal .menu__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-internal .menu__sublist {
+    position: static;
+    width: 100%;
+    display: block;
+  }
+  .header-internal .menu__subitem {
+    display: block;
+    margin-right: 0;
+  }
+  .header-internal .menu__subitem a {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .promo__info {
+    top: 60px;
+  }
+  .promo__info p {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .promo__info span {
+    font-size: 16px;
+  }
+  .promo__info blockquote {
+    display: none;
+  }
+  .pagination__link--next {
+    right: 50px;
+  }
+  .pagination__link--prev {
+    left: 50px;
+  }
+  .pagination {
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 480px) {
@@ -1661,5 +1717,23 @@ span.pagination__link--more {
   .footer__column {
     width: 50%;
     margin-top: 20px;
+  }
+  .pagination__link--next {
+    right: 25px;
+  }
+  .pagination__link--prev {
+    left: 25px;
+  }
+  .promo__slide {
+    height: 110px;
+  }
+  .promo__info p {
+    font-size: 18px;
+  }
+  .promo__info span {
+    font-size: 11px;
+  }
+  .promo__pagination {
+    bottom: 5px !important;
   }
 }
