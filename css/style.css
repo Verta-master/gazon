@@ -1234,3 +1234,206 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+@media (max-width: 915px) {
+  .wrapper {
+    width: 100%;
+  }
+  .search {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 1px solid #fff;
+  }
+  .search__input {
+    height: 30px;
+    opacity: 1;
+    border: 0;
+  }
+  .news__main {
+    width: 60%;
+  }
+  .news__sidebar {
+    width: 38%;
+  }
+  .gallery__item {
+    height: 190px;
+  }
+  .gallery__item--big {
+    height: 380px;
+  }
+  .blog__slider {
+    width: 635px;
+  }
+  .blog__prev {
+    left: 10px;
+    background-size: 16px 10px;
+  }
+  .blog__next {
+    right: 10px;
+    background-size: 16px 10px;
+  }
+  .team__item {
+    height: 250px;
+  }
+  .team__info {
+    padding: 20px;
+    bottom: 0;
+    top: auto;
+  }
+  .subscribe__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 766px) {
+  .news__wrap {
+    display: block;
+  }
+  .news__main,
+  .news__sidebar {
+    width: 100%;
+  }
+  .news__main {
+    margin-bottom: 20px;
+  }
+  .gallery__list {
+    padding-left: 0;
+  }
+  .gallery__item--big {
+    position: relative;
+    width: 100%;
+  }
+  .gallery__item--big .gallery__info,
+  .gallery__info {
+    padding: 20px;
+  }
+  .blog__slider {
+    width: 420px;
+  }
+  .team__item {
+    width: 50%;
+  }
+  .subscribe__wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscribe__wrap p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__column {
+    width: 20%;
+  }
+  .footer__block {
+    width: 38%;
+  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .header .logo {
+    margin-bottom: 10px;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search {
+    margin: 0;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    width: 100vw;
+    padding-top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #535353;
+  }
+  .menu__item {
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+  }
+  .menu__item a {
+    display: block;
+    padding: 5px 20px;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icons/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+}
+@media (max-width: 480px) {
+  .team__item,
+  .gallery__item {
+    width: 100%;
+    height: 300px;
+  }
+  .gallery__info p {
+    font-size: 19px;
+  }
+  .title-center {
+    display: block;
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding: 0;
+    text-align: center;
+  }
+  .title-center::before,
+  .title-center::after {
+    display: none;
+  }
+  .blog__slider {
+    width: 205px;
+  }
+  .footer__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__block,
+  .subscribe__form {
+    width: 100%;
+  }
+  .footer__column {
+    width: 50%;
+    margin-top: 20px;
+  }
+}
