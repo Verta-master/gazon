@@ -45,6 +45,11 @@
     opacity: 1;
     border: 0;
   }
+  .header-internal {
+    .search {
+      margin-right: 0;
+    }
+  }
   .news__main {
     width: 60%;
   }
@@ -80,6 +85,12 @@
   .subscribe__wrap {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .promo__slide {
+    height: 265px;
+  }
+  .promo__info {
+    left: 20px;
   }
 }
 
@@ -132,7 +143,6 @@
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
-    position: relative;
     
     .logo {
       margin-bottom: 10px;
@@ -142,6 +152,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: static;
   }
   .search {
     margin: 0;
@@ -151,10 +162,9 @@
     position: absolute;
     z-index: 10;
     top: 100%;
-    width: 100vw;
     padding-top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -20px;
+    right: -20px;
     background-color: #535353;
   }
   .menu__item {
@@ -179,6 +189,52 @@
   .menu--opened .menu__btn {
     background-image: url(../img/icons/icon-menu-cross.svg);
     background-size: 24px 24px;
+  }
+  .promo__slide {
+    height: 175px;
+  }
+  .header-internal {    
+    .menu__btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .menu__sublist {
+      position: static;
+      width: 100%;
+      display: block;
+    }
+    .menu__subitem {
+      display: block;
+      margin-right: 0;
+      
+      a {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .promo__info {
+    top: 60px;
+    
+    p {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    span {
+      font-size: 16px;
+    }
+    blockquote {
+      display: none;
+    }
+  }
+  .pagination__link--next {
+    right: 50px;
+  }
+  .pagination__link--prev {
+    left: 50px;
+  }
+  .pagination {
+    padding-bottom: 60px;
   }
 }
 
@@ -216,5 +272,23 @@
   .footer__column {
     width: 50%;
     margin-top: 20px;
+  }
+  .pagination__link--next {
+    right: 25px;
+  }
+  .pagination__link--prev {
+    left: 25px;
+  }
+  .promo__slide {
+    height: 110px;
+  }
+  .promo__info p {
+    font-size: 18px;
+  }
+  .promo__info span {
+    font-size: 11px;
+  }
+  .promo__pagination {
+    bottom: 5px !important;
   }
 }
