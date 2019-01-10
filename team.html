@@ -18,9 +18,9 @@
       <path d="M1154.02,51.865v20.17h-4.35V47.528h15.76v4.337h-11.41Z" transform="translate(-1149.66 -47)"/>
     </symbol>
   </svg>
-  <header class="header header--internal">
-    <div class="wrapper">
-      <div class="logo">
+  <header class="header-internal">
+    <div class="wrapper header__wrap">
+      <div class="logo-internal">
         <svg width="33.781" height="22" viewBox="0 0 33.781 22">
           <path d="M45.087,23.577L41.709,20,40,21.789l5.087,5.283h0.04l5.087-5.283L48.505,20Z" transform="translate(-40 -20)"/>
           <path d="M56.893,23.577L53.462,20l-1.676,1.789,5.107,5.283h0.04L62,21.789,60.324,20Z" transform="translate(-40 -20)"/>
@@ -36,7 +36,7 @@
       <nav class="menu">
         <button type="button" class="menu__btn"></button>
         <ul class="menu__list">
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="#">Люди</a>
             <ul class="menu__sublist">
               <li class="menu__subitem"><a href="#">Эксперты</a></li>
@@ -277,16 +277,18 @@
     
     <div class="wrapper">
       <nav class="pagination">
-        <a href="#" class="pagination__link pagination__link--first"></a>
-        <a href="#" class="pagination__link pagination__link--prev"></a>
-        <span class="pagination__link">1</span>
-        <a href="#" class="pagination__link">2</a>
-        <a href="#" class="pagination__link">3</a>
-        <a href="#" class="pagination__link">4</a>
-        <a href="#" class="pagination__link">5</a>
-        <a href="#" class="pagination__link">6</a>
-        <a href="#" class="pagination__link">7</a>
-        <span class="pagination__link  pagination__link--more">...</span>
+        <a href="#" class="pagination__link pagination__link--first pagination__link--disabled"></a>
+        <a href="#" class="pagination__link pagination__link--prev pagination__link--disabled"></a>
+        <div class="pagination__wrap">
+          <span class="pagination__link">1</span>
+          <a href="#" class="pagination__link">2</a>
+          <a href="#" class="pagination__link">3</a>
+          <a href="#" class="pagination__link">4</a>
+          <a href="#" class="pagination__link">5</a>
+          <a href="#" class="pagination__link">6</a>
+          <a href="#" class="pagination__link">7</a>
+          <span class="pagination__link pagination__link--more">...</span>
+        </div>
         <a href="#" class="pagination__link pagination__link--next"></a>
         <a href="#" class="pagination__link pagination__link--last"></a>
       </nav>

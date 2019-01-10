@@ -1,0 +1,73 @@
+.promo__slider {
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    border-radius: 0;
+    background-color: #D8D8D8;
+    opacity: 1;
+    outline: none;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: @green;
+    transform: rotate(45deg);
+  }
+}
+
+.promo__pagination {
+  bottom: 20px !important;
+}
+
+.promo__slide {
+  position: relative;
+  box-sizing: border-box;
+  height: 670px;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
+.promo__info {
+  position: absolute;
+  z-index: 5;
+  top: 200px;
+  left: ~"calc(50% - 437px)";
+  color: #fff;
+  
+  p {
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0;
+  }
+  
+  span {
+    display: block;
+    line-height: 47px;
+    font-size: 18px;
+  }
+}
+
+blockquote {
+  .reset();
+  position: relative;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  background-image: url(../img/icons/quotes.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px 22px;
+}

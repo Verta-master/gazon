@@ -1,0 +1,80 @@
+.pagination {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__link {
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  &--first,
+  &--last {
+    position: absolute;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/icon-page.svg);
+    background-size: 14px 10px;
+  }
+  &--first {
+    transform: rotate(180deg);
+    left: 0;
+  }
+  &--last {
+    right: 0;
+  }
+  
+  &--prev,
+  &--next {
+    position: absolute;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/tick.svg);
+    background-size: 10px 7px;
+  }
+  &--prev {
+    transform: rotate(90deg);
+    left: 100px;
+  }
+  &--next {
+    transform: rotate(-90deg);
+    right: 100px;
+  }
+  
+  &--disabled {
+    display: none;
+  }
+}
+
+a.pagination__link {
+  &:hover,
+  &:active {
+    color: @green;
+  }
+}
+
+span.pagination__link {
+  color: @green;
+  
+  &--more {
+    color: #000;
+  }
+}

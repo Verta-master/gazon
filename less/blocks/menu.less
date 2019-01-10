@@ -1,5 +1,6 @@
 .menu {
   position: relative;
+  flex-grow: 1;
 }
 
 .menu__btn {
@@ -15,16 +16,44 @@
 }
 
 .menu__item {
+  position: relative;
   margin-left: 22px;
   margin-right: 22px;
   font-size: 14px;
   line-height: 30px;
   .transition();
   
-  &:hover,
-  &:active,
-  &--active {
+  a:hover,
+  a:active {
     color: @green;
     .transition();
   }
+  
+  &--active > a {
+    color: @green;
+  }
+  
+  &:hover,
+  &:active {
+    .menu__sublist {
+      display: block;
+    }
+  }
+}
+
+.menu__sublist {
+  display: none;
+  .reset();
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  font-size: 11px;
+}
+
+.menu__subitem {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 44px;
 }
