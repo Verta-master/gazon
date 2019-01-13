@@ -924,6 +924,7 @@ h1 {
   padding-bottom: 0;
 }
 .blog--article {
+  padding-bottom: 80px;
   background-color: #f4f4f4;
 }
 .blog--article .blog__info {
@@ -1255,17 +1256,18 @@ h1 {
 }
 .subscribe__bg {
   max-width: 595px;
-  padding-top: 35px;
+  padding-top: 30px;
   padding-left: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-right: 35px;
   background-color: #f4f4f4;
 }
 .subscribe--internal {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .subscribe--internal p {
   margin-top: 0;
+  margin-bottom: 25px;
   font-size: 16px;
 }
 .subscribe--internal b {
@@ -1277,6 +1279,7 @@ h1 {
   background-color: #fff;
 }
 .subscribe--internal .subscribe__comment {
+  margin-bottom: 0;
   font-size: 9px;
 }
 .social {
@@ -1644,6 +1647,9 @@ span.pagination__link--more {
 .article__main {
   width: 595px;
 }
+.article__main .news__info {
+  margin-top: 3px;
+}
 .article__banner {
   width: 200px;
 }
@@ -1652,7 +1658,7 @@ span.pagination__link--more {
 }
 .article__btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 23px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1680,7 +1686,7 @@ span.pagination__link--more {
   transition: ease-out 0.3s;
 }
 .article__author {
-  margin-left: 110px;
+  margin-left: 70px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1694,6 +1700,12 @@ span.pagination__link--more {
   position: relative;
   padding-left: 90px;
   padding-right: 45px;
+}
+.article__text img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .article__social {
   position: absolute;
@@ -1737,8 +1749,8 @@ span.pagination__link--more {
   transition: ease-out 0.3s;
 }
 .article__tags {
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 53px;
+  margin-bottom: 30px;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -1749,7 +1761,8 @@ span.pagination__link--more {
 .article__tags a {
   display: inline-block;
   margin-right: 10px;
-  padding: 10px 15px;
+  margin-bottom: 10px;
+  padding: 9px 14px;
   border: 1px solid rgba(155, 155, 155, 0.5);
   border-radius: 4px;
   -webkit-transition: ease-out 0.3s;
@@ -2029,6 +2042,19 @@ span.pagination__link--more {
   .pagination {
     padding-bottom: 60px;
   }
+  .article__banner {
+    display: none;
+  }
+  .article__main {
+    width: 100%;
+  }
+  .article__wrap {
+    display: block;
+  }
+  .article__text {
+    padding-left: 50px;
+    padding-right: 0;
+  }
 }
 @media (max-width: 480px) {
   .team__item,
@@ -2097,5 +2123,16 @@ span.pagination__link--more {
   .content__title {
     font-size: 16px;
     line-height: 1.2;
+  }
+  .article__author {
+    margin-left: 0;
+    margin-top: 5px;
+    display: block;
+  }
+  .subscribe__bg {
+    padding: 20px;
+  }
+  .subscribe--internal .subscribe__input {
+    width: 50%;
   }
 }
