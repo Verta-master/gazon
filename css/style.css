@@ -442,6 +442,10 @@ button {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
 .wrapper {
   width: 915px;
   margin-left: auto;
@@ -919,6 +923,16 @@ button {
 .blog--internal {
   padding-bottom: 0;
 }
+.blog--article {
+  background-color: #f4f4f4;
+}
+.blog--article .blog__info {
+  background-color: #f4f4f4;
+}
+.blog--article .blog__slide::after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0)), to(#f4f4f4));
+  background-image: linear-gradient(to bottom, rgba(244, 244, 244, 0) 0%, #f4f4f4 100%);
+}
 .blog__slider {
   margin-top: 20px;
   width: 850px;
@@ -1238,6 +1252,32 @@ button {
 }
 .subscribe__input::placeholder {
   opacity: 1;
+}
+.subscribe__bg {
+  max-width: 595px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  background-color: #f4f4f4;
+}
+.subscribe--internal {
+  margin-bottom: 40px;
+}
+.subscribe--internal p {
+  margin-top: 0;
+  font-size: 16px;
+}
+.subscribe--internal b {
+  display: block;
+}
+.subscribe--internal .subscribe__form {
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+}
+.subscribe--internal .subscribe__comment {
+  font-size: 9px;
 }
 .social {
   margin: 0;
@@ -1584,6 +1624,140 @@ span.pagination__link--more {
   margin-top: 10px;
   line-height: 24px;
   font-size: 19px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article {
+  padding-top: 40px;
+}
+.article__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.article__main {
+  width: 595px;
+}
+.article__banner {
+  width: 200px;
+}
+.article__banner-block {
+  position: relative;
+}
+.article__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 112px;
+  height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__btn:hover,
+.article__btn:active {
+  color: #25d366;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__author {
+  margin-left: 110px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__author:hover,
+.article__author:active {
+  color: #000;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__text {
+  position: relative;
+  padding-left: 90px;
+  padding-right: 45px;
+}
+.article__social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.article__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  border: 1px solid #9b9b9b;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__link--fb {
+  background-image: url(../img/icons/icon-fb-grey.svg);
+  background-size: 8px 14px;
+}
+.article__link--vk {
+  background-image: url(../img/icons/icon-vk-grey.svg);
+  background-size: 14px 8px;
+}
+.article__link--tw {
+  background-image: url(../img/icons/icon-tw-grey.svg);
+  background-size: 14px 12px;
+}
+.article__link--tg {
+  background-image: url(../img/icons/icon-telegram-grey.svg);
+  background-size: 14px 12px;
+}
+.article__link:hover,
+.article__link:active {
+  opacity: 0.7;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__tags {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.article__tags span {
+  font-weight: 700;
+  margin-right: 30px;
+}
+.article__tags a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgba(155, 155, 155, 0.5);
+  border-radius: 4px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.article__tags a:hover,
+.article__tags a:active {
+  border-color: #25d366;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
