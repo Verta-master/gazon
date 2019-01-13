@@ -1,0 +1,132 @@
+.article {
+  padding-top: 40px;
+}
+
+.article__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.article__main {
+  width: 595px;
+}
+
+.article__banner {
+  width: 200px;
+}
+
+.article__banner-block {
+  position: relative;
+}
+
+.article__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 112px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @green;
+    .transition();
+  }
+}
+
+.article__author {
+  margin-left: 110px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #000;
+    .transition();
+  }
+}
+
+.article__text {
+  position: relative;
+  padding-left: 90px;
+  padding-right: 45px;
+}
+
+.article__social {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .reset();
+  list-style: none;
+}
+
+.article__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  border: 1px solid rgb(155, 155, 155);
+  background-repeat: no-repeat;
+  background-position: center;
+  .transition();
+  
+  &--fb {
+    background-image: url(../img/icons/icon-fb-grey.svg);
+    background-size: 8px 14px;
+  }
+  
+  &--vk {
+    background-image: url(../img/icons/icon-vk-grey.svg);
+    background-size: 14px 8px;
+  }
+  
+  &--tw {
+    background-image: url(../img/icons/icon-tw-grey.svg);
+    background-size: 14px 12px;
+  }
+  
+  &--tg {
+    background-image: url(../img/icons/icon-telegram-grey.svg);
+    background-size: 14px 12px;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    .transition();
+  }
+}
+
+.article__tags {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 11px;
+  text-transform: uppercase;
+  
+  span {
+    font-weight: 700;
+    margin-right: 30px;
+  }
+  
+  a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid rgba(155, 155, 155, 0.5);
+    border-radius: 4px;
+    .transition();
+    
+    &:hover,
+    &:active {
+      border-color: @green;
+      .transition();
+    }
+  }
+}
