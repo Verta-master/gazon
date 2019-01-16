@@ -1,20 +1,24 @@
 .subscribe__wrap {
-  padding-top: 60px;
-  padding-bottom: 90px;
-  padding-left: 70px;
-  padding-right: 193px;
+  padding-top: 80px;
+  padding-bottom: 115px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   
   p {
     margin: 0;
-    font-size: 19px;
+    margin-top: -10px;
+    font-size: 24px;
   }
   
   .subscribe__comment {
-    font-size: 9px;
+    margin-top: 0;
+    font-size: 12px;
   }
+}
+
+.subscribe__block {
+  margin-left: 100px;
 }
 
 .subscribe__comment {
@@ -25,7 +29,7 @@
     
     &:hover,
     &:active {
-      text-decoration: none;
+      color: @green;
     }
   }
 }
@@ -34,7 +38,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 384px;
+  width: 510px;
   margin-bottom: 5px;
   padding: 2px 4px;
   border-radius: 4px;
@@ -43,9 +47,9 @@
 
 .subscribe__input {
   flex-grow: 1;
-  height: 32px;
+  height: 50px;
   padding: 0 15px;
-  font-size: 11px;
+  font-size: 14px;
   color: #9b9b9b;
   
   &::placeholder {
