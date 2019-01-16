@@ -542,7 +542,7 @@ h1 {
 .logo svg {
   fill: #fff;
   width: 180px;
-  height: auto;
+  height: 35px;
 }
 .logo::after {
   content: "";
@@ -561,7 +561,7 @@ h1 {
 .logo-internal svg {
   fill: #25d366;
   width: 45px;
-  height: auto;
+  height: 33px;
 }
 .menu {
   position: relative;
