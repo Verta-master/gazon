@@ -43,6 +43,63 @@
       </nav>
     </div>
   </header>
+  <header class="header-internal header-internal--bg header-hidden">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo-internal">
+        <svg width="33.781" height="22" viewBox="0 0 33.781 22">
+          <path d="M45.087,23.577L41.709,20,40,21.789l5.087,5.283h0.04l5.087-5.283L48.505,20Z" transform="translate(-40 -20)"/>
+          <path d="M56.893,23.577L53.462,20l-1.676,1.789,5.107,5.283h0.04L62,21.789,60.324,20Z" transform="translate(-40 -20)"/>
+          <path d="M45.087,30.628l-3.378-3.556L40,28.85l5.087,5.293V34.1l0.04,0.041,5.087-5.293-1.709-1.778Z" transform="translate(-40 -20)"/>
+          <path d="M56.893,30.628l-3.431-3.556L51.786,28.85l5.107,5.293V34.1l0.04,0.041L62,28.85l-1.676-1.778Z" transform="translate(-40 -20)"/>
+          <path d="M45.087,38.506l-3.378-3.577L40,36.717,45.087,42h0.04l5.087-5.283-1.709-1.789Z" transform="translate(-40 -20)"/>
+          <path d="M56.893,38.506l-3.431-3.577-1.676,1.789L56.893,42h0.04L62,36.717l-1.676-1.789Z" transform="translate(-40 -20)"/>
+          <path d="M68.679,23.577L65.247,20l-1.676,1.789,5.067,5.283h0.04l5.107-5.283L72.07,20Z" transform="translate(-40 -20)"/>
+          <path d="M68.679,30.628l-3.431-3.556L63.571,28.85l5.067,5.293,0.04-.041v0.041l5.107-5.293L72.07,27.071Z" transform="translate(-40 -20)"/>
+          <path d="M68.679,38.506l-3.431-3.577-1.676,1.789L68.639,42h0.04l5.107-5.283L72.07,34.929Z" transform="translate(-40 -20)"/>
+        </svg>
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#">Люди</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Эксперты</a></li>
+              <li class="menu__subitem"><a href="#">Студенты</a></li>
+              <li class="menu__subitem"><a href="#">Выпускники</a></li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#">Кампус</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Спорт</a></li>
+              <li class="menu__subitem"><a href="#">Культура</a></li>
+              <li class="menu__subitem"><a href="#">Работа</a></li>
+              <li class="menu__subitem"><a href="#">Библиотеки</a></li>
+              <li class="menu__subitem"><a href="#">Кружки</a></li>
+              <li class="menu__subitem"><a href="#">Стажировки</a></li>
+              <li class="menu__subitem"><a href="#">Будни</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">Город</a></li>
+          <li class="menu__item">
+            <a href="#">Новости</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Анонсы</a></li>
+              <li class="menu__subitem"><a href="#">Мнения</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">События</a></li>
+          <li class="menu__item"><a href="#">Наука</a></li>
+          <li class="menu__item"><a href="#">Образование</a></li>
+        </ul>
+        <form action="#" method="get" class="search">
+          <button type="submit" title="Найти" class="search__btn"></button>
+          <input type="text" class="search__input" placeholder="Поиск">
+        </form>
+      </nav>
+    </div>
+  </header>
   
   <main>
     <section class="news">
@@ -364,6 +421,19 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 15,
+    });
+  </script>
+  
+  <!-- Header -->
+  <script>
+    $(window).scroll(function(){
+      if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
+        $(".header").addClass("header-hidden");
+        $(".header-internal").removeClass("header-hidden");
+      } else {
+        $(".header-internal").addClass("header-hidden");
+        $(".header").removeClass("header-hidden");
+      };
     });
   </script>
 </body>
