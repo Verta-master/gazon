@@ -1,5 +1,5 @@
 .article {
-  padding-top: 40px;
+  padding-top: 160px;
 }
 
 .article__wrap {
@@ -9,7 +9,7 @@
 }
 
 .article__main {
-  width: 595px;
+  width: ~"calc(100% - 300px)";
   
   .news__info {
     margin-top: 3px;
@@ -17,11 +17,18 @@
 }
 
 .article__banner {
-  width: 200px;
+  width: 280px;
+  margin-bottom: 20px;
 }
 
 .article__banner-block {
+  width: 100%;
   position: relative;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .article__btn {
@@ -47,7 +54,7 @@
 }
 
 .article__author {
-  margin-left: 70px;
+  margin-left: 100px;
   .transition();
   
   &:hover,
@@ -59,14 +66,14 @@
 
 .article__text {
   position: relative;
-  padding-left: 90px;
-  padding-right: 45px;
+  padding-left: 135px;
+  padding-right: 130px;
   
   img {
     width: 100%;
     height: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -80,9 +87,9 @@
 
 .article__link {
   display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: 10px;
+  width: 28px;
+  height: 28px;
+  margin-top: 15px;
   border: 1px solid rgb(155, 155, 155);
   background-repeat: no-repeat;
   background-position: center;
@@ -90,22 +97,22 @@
   
   &--fb {
     background-image: url(../img/icons/icon-fb-grey.svg);
-    background-size: 8px 14px;
+    background-size: 12px 21px;
   }
   
   &--vk {
     background-image: url(../img/icons/icon-vk-grey.svg);
-    background-size: 14px 8px;
+    background-size: 21px 12px;
   }
   
   &--tw {
     background-image: url(../img/icons/icon-tw-grey.svg);
-    background-size: 14px 12px;
+    background-size: 21px 18px;
   }
   
   &--tg {
     background-image: url(../img/icons/icon-telegram-grey.svg);
-    background-size: 14px 12px;
+    background-size: 21px 18px;
   }
   
   &:hover,
@@ -116,21 +123,21 @@
 }
 
 .article__tags {
-  margin-top: 53px;
-  margin-bottom: 30px;
-  font-size: 11px;
+  margin-top: 75px;
+  margin-bottom: 45px;
+  font-size: 16px;
   text-transform: uppercase;
   
   span {
     font-weight: 700;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   
   a {
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
-    padding: 9px 14px;
+    padding: 12px 16px;
     border: 1px solid rgba(155, 155, 155, 0.5);
     border-radius: 4px;
     .transition();

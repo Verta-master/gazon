@@ -30,6 +30,7 @@
   .promo__slide {
     height: 320px;
   }
+  .columns,
   .wrapper {
     width: 100%;
   }
@@ -60,6 +61,16 @@
     .blog__slide {
       margin-right: 0;
     }
+  }
+  .sidebar {
+    width: 270px;
+  }
+  .content {
+    width: 690px;
+  }
+  .article__text {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -171,7 +182,23 @@
     padding-right: 0;
   }
   .content__info {
-    width: ~"calc(100% - 225px)";
+    width: ~"calc(100% - 290px)";
+  }
+  .content__title {
+    font-size: 22px;
+  }
+  .article__banner {
+    display: none;
+  }
+  .article__main {
+    width: 100%;
+  }
+  .article__wrap {
+    display: block;
+  }
+  .article__text {
+    padding-left: 50px;
+    padding-right: 0;
   }
 }
 
@@ -317,18 +344,11 @@
   .pagination {
     padding-bottom: 60px;
   }
-  .article__banner {
-    display: none;
+  .content__list {
+    padding-top: 0;
   }
-  .article__main {
-    width: 100%;
-  }
-  .article__wrap {
-    display: block;
-  }
-  .article__text {
-    padding-left: 50px;
-    padding-right: 0;
+  .article {
+    padding-top: 100px;
   }
 }
 
@@ -398,7 +418,6 @@
   }
   .content__item {
     display: block;
-    width: 205px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -440,5 +459,8 @@
     margin-left: 5px;
     margin-right: 5px;
     font-size: 16px;
+  }
+  h1 {
+    font-size: 22px;
   }
 }
